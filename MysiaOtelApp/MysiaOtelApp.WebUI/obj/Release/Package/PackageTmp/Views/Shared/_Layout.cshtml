@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - MYSIA OLYMPOS HOTEL</title>
+    <meta name="description" content="MYSIA OLYMPOS OTEL DOĞADA BİR MOLA">
+    <meta name="author" content="MYSIA OTEL 360MEKA">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="~/Content/css/base.css">
+    <link rel="stylesheet" href="~/Content/css/vendor.css">
+    <link rel="stylesheet" href="~/Content/css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="~/Content/js/modernizr.js"></script>
+    <script src="~/Content/js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="~/Content/mysia_otel_logo.png" type="image/x-icon">
+    <link rel="icon" href="~/Content/mysia_otel_logo.png" type="image/x-icon">
+</head>
+<body>
+
+    <!-- home
+    ================================================== -->
+    <main class="s-home s-home--particles">
+
+        <div id="particles-js" class="home-particles"></div>
+
+        <div class="gradient-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="home-logo">
+                <a href="/">
+                    <img src="~/Content/mysia_otel_logo.png" alt="MYSIA OLYMPOS HOTEL">
+                </a>
+            </div>
+
+            @RenderBody()
+
+            <div class="row home-copyright">
+                <span>Copyright @DateTime.Now.Year</span>
+                <span>Design by <a href="/">MYSIA OLYMPOS HOTEL</a></span>
+            </div> <!-- end home-copyright -->
+
+        </div> <!-- end home-content -->
+
+    </main> <!-- end s-home -->
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="~/Content/js/jquery-3.2.1.min.js"></script>
+    <script src="~/Content/js/plugins.js"></script>
+    <script src="~/Content/js/polygons.js"></script>
+    <script src="~/Content/js/main.js"></script>
+</body>
+</html>
